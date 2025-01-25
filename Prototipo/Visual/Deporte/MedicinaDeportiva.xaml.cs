@@ -34,8 +34,7 @@ namespace Prototipo.Visual.Deporte
             {
                 if (pageType == "Formulario")
                 {
-                    ContentFrame.Navigate(typeof(Formulario));
-                    Console.WriteLine("Navegando a FormularioPediatrico");
+                    ContentFrame.Navigate(typeof(Opciones));
                 }
                 else if (pageType == "Facturacion")
                 {
