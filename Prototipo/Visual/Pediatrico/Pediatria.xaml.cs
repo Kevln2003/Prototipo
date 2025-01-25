@@ -33,7 +33,7 @@ namespace Prototipo.Visual.Pediatrico
         {
             if (pageType == "Formulario")
             {
-                ContentFrame.Navigate(typeof(FormularioPediatrico));
+                ContentFrame.Navigate(typeof(OpcionesPediatria));
 
 
             }

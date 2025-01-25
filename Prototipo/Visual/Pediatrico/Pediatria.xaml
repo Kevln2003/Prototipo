@@ -9,12 +9,19 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
+        <!-- Define las filas -->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <!-- Panel superior para Modulos -->
             <RowDefinition Height="*"/>
+            <!-- Frame principal ocupa el resto del espacio -->
         </Grid.RowDefinitions>
 
-        <local1:Modulos x:Name="Modulos" Grid.Column="0"/>
-        <Frame x:Name="ContentFrame" Grid.Column="1"/>
+        <!-- Módulos en la fila superior -->
+        <Border Grid.Column="0" BorderBrush="Gray" BorderThickness="1">
+            <local1:Modulos x:Name="Modulos" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Border>
+        <!-- Contenido principal en el Frame -->
+        <Frame x:Name="ContentFrame" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
 </Page>
